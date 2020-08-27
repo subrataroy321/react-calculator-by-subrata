@@ -30,3 +30,9 @@ span {
   font-size: 40px;
   color: blue
 }
+
+select {
+  width: 60px;
+  font-size: 30px;
+  border-radius: 5px;
+}

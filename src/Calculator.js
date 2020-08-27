@@ -8,7 +8,7 @@ class Calculator extends Component {
             num1: '',
             num2: '',
             total: '',
-            operator: ''
+            operator: '+'
         }
     }
   
@@ -89,12 +89,12 @@ class Calculator extends Component {
                     onChange={(e) => this.setNum(e, 'num1')}
                 />
                 
-                <input
-                    type="text"
-                    placeholder="'+' or '-' or '*' or '/'"
-                    value={this.state.operator}
-                    onChange={(e) => this.setOperator(e) }               
-                />
+                <select value={this.state.operator} onChange={(e) => this.setOperator(e) }>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
                 
                 <input 
                     type="number"  
